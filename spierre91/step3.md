@@ -4,11 +4,12 @@ In this Post we will be ussing the Pandas library in python to demonstration dat
 
 
 First, let's import the pandas library:
-`import pandas as pd`{{execute}}
+
+```import pandas as pd```{{execute}}
 
 Next, let's read the data into a pandas data frame
 
-`print("THis is a block of code")`
+```df = pd.read_csv("wines.csv")```{{execute}}
 
 Here's a block of runnable code:
 
