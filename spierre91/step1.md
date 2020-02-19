@@ -1,21 +1,15 @@
-# This is a heading
+# Importing The Data
 
-In this scenario we will be using pandas 
-
-Here's a single line of runnable code:
+In this Post we will be ussing the Pandas library in python to demonstration data selection and filtering. We will be usin The Wine Reviews data set for out demonstration. 
 
 
-`print('hello world')`{{execute}}
+First, let's import the pandas library:
 
-`print("THis is a block of code")`
+```import pandas as pd```
 
-Here's a block of runnable code:
+Next, let's read the data into a pandas data frame
 
-```
-a = 1
-b = 2
-c = 3
-d = a + b + c
+```df = pd.read_csv("wines.csv")```
 
-d
-```{{execute}}
+Let's print the first five rows of data:
+``print(df.head())``
