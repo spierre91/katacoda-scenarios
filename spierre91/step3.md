@@ -5,19 +5,12 @@ In this Post we will be ussing the Pandas library in python to demonstration dat
 
 First, let's import the pandas library:
 
-```import pandas as pd```{{execute}}
+```import pandas as pd```
 
 Next, let's read the data into a pandas data frame
 
-```df = pd.read_csv("wines.csv")```{{execute}}
+```df = pd.read_csv("wines.csv")```
 
-Here's a block of runnable code:
+Let's print the first five rows of data:
+``print(df.head())``
 
-```
-a = 1
-b = 2
-c = 3
-d = a + b + c
-
-d
-```{{execute}}
