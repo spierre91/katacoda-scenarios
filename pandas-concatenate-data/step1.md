@@ -11,7 +11,7 @@ Next let's import the pandas library and rename it as 'pd':
 
 `import pandas as pd`{{execute}}
 
-For our demonstration we will be using the four data files. These file correspond to Google search trends for Tesla over the course of 5 years. The data was pulled using the Google Trends API. 
+For our demonstration we will be using the four data files. These file correspond to Google search trends for Tesla (2015-2018). The data was pulled using the Google Trends API. 
 
 Let's read in each file into their own pandas data frames and print the first five rows. For 2015:
 
@@ -19,9 +19,42 @@ Let's read in each file into their own pandas data frames and print the first fi
 
 `print(df_2015.head())`{{execute}}
 
+We see that we have an unnamed column. We can remove that with the following:
+
+`del df_2015['Unnamed: 0']`{{execute}}
+
+Let's reepeat this for 2016, 2017, 2018, and 2019:
+
+For 2016:
+
+`df_2016 = pd.read_csv('tesla_2016.csv')`{{execute}}
+
+`print(df_2016.head())`{{execute}}
+
+`del df_2016['Unnamed: 0']`{{execute}}
+
+`print(df_2016.head())`{{execute}}
 
 
+For 2017:
+
+`df_2017 = pd.read_csv('tesla_2017.csv')`{{execute}}
+
+`print(df_2017.head())`{{execute}}
+
+`del df_2017['Unnamed: 0']`{{execute}}
+
+`print(df_2017.head())`{{execute}}
 
 
+And finally, for 2018:
+
+`df_2018 = pd.read_csv('tesla_2018.csv')`{{execute}}
+
+`print(df_2018.head())`{{execute}}
+
+`del df_2018['Unnamed: 0']`{{execute}}
+
+`print(df_2018.head())`{{execute}}
 
 
