@@ -7,7 +7,7 @@ Here's a single line of runnable code:
 
 `print('hello world')`{{execute}}
 
-`print("THis is a block of code")`{{execute}}
+`print("THis is a block of code")`
 
 Here's a block of runnable code:
 
