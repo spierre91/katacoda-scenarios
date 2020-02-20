@@ -1,23 +1,14 @@
-# This is a heading
+# Selecting Columns with Pandas
 
-This is some edited text.
-
-Here's a single line of runnable code:
+First let's import the pandas library and rename it as 'pd':
 
 
-`print('hello world')`{{execute}}
+`import pandas as pd`{{execute}}
+For our demonstration we will be using the Austin Animal Shelter data set. Let's import the data into a data frame:
 
-`print("THis is a block of code")`
+`df = pd.read_csv(""aac_shelter_outcomes.csv"")`
 
-Here's a block of runnable code:
+`print(df.head())
 
-```
-a = 1
-b = 2
-c = 3
-d = a + b + c
-
-d
-```{{execute}}
 
 
