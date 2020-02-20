@@ -1,4 +1,4 @@
-#Selecting Columns Using Pandas
+# Selecting Data with Pandas
 
 Next let's select a few columns. Let's select `animal_type`, `color`, and `breed`:
 
