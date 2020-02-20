@@ -46,7 +46,7 @@ We can also create `month` and `year` columns:
 
 `print(df_select.head())`{{execute}}
 
-Finally, we can select our engineer columns and let's select one original column, say 'sex_upon_outcome':
+Finally, we can select our engineered columns and let's select one original column, say 'sex_upon_outcome':
 
 `df_select = df_select[['year', 'month', 'week']]`{{execute}}
 
