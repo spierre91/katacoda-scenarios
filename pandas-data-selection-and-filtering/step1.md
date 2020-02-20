@@ -1,6 +1,6 @@
 # Reading Data with Pandas
 
-First let's open up the python interactive shell by ptyping 'python' and pressing enter in the terminal window on the right.
+First let's open up the python interactive shell by typing 'python' and pressing enter in the terminal window on the right.
 
 Next let's import the pandas library and rename it as 'pd':
 
