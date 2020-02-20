@@ -6,9 +6,11 @@ The first thing we need to do is clone the GitHub repo containing the necessary 
 Next we need to go into the folder corresponding the the data selection and filtering scenario. Copy and paste the folloing and press enter:
 `cd katacoda-scenarios/pandas-data-selection-and-filtering/`
 
-Now let's open up the python interactive shell by typing `python` and pressing enter in the terminal window on the right.
+Next let's open up a python interactive shell. 
 
-Next let's import the pandas library and rename it as 'pd':
+Copy and paste `python` in the terminal on the righthand side and press enter. 
+
+Next let's import the pandas library and rename it as 'pd'. You can either copy and paste and press enter or simply click the code below:
 
 `import pandas as pd`{{execute}}
 
