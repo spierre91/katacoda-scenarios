@@ -12,11 +12,6 @@ Let's print the first five rows:
 
 `print(combined_df.head())`{{execute}}
 
-We see that we have the unnamed column which we can delete:
-
-`del combined_df['Unnamed: 0']`{{execute}}
-
-
 For a sanity check, let's convert the 'Week' column into a Pandas datetime object, create a year column and print the unique set of years:
 
 
