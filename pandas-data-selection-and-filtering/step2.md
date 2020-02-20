@@ -1,6 +1,8 @@
 #Selecting Columns Using Pandas
 
 Next let's select a few columns. Let's select `animal_type`, `color`, and `breed`:
+
+
 `df_select = df[['animal_type', 'color', 'breed']]`{{execute}}
 
 Now let's print the first five rows:
