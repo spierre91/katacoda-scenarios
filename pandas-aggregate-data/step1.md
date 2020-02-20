@@ -11,6 +11,10 @@ Next let's import the pandas library and rename it as 'pd':
 
 `import pandas as pd`{{execute}}
 
-For this demonstration we will be using 'AAPL" stock price data. Let's import the data into a Pandas data frame:
+For this demonstration we will be using 'AAPL' stock price data. Let's import the data into a Pandas data frame:
 
 `df = pd.read_csv("AAPL.csv")`{{execute}}
+
+Let's print the first five rows:
+
+`print(df.head())`{{execute}}
