@@ -15,3 +15,8 @@ and let's print the first five rows:
 `print(df.head())`{{execute}}
 
 
+Finally, let's print the unique set of `year` values:
+
+`print(set(df['year'].values))`{{execute}}
+
+And we see that we have all the year values we expect. 
