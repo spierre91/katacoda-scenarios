@@ -18,5 +18,13 @@ For our demonstration we will be using the Austin Animal Shelter data set. Let's
 
 `print(df.head())`{{execute}}
 
+We will notice that a few of the columns are hidden. We can show all columns by executing the following:
+
+`pd.set_option('display.max_columns', None)`{{execute}}
+`pd.set_option('display.max_rows', None)`{{execute}}
+
+This set's the column and row limits to `None`. Now let's print the first five rows:
+
+`print(df.head())`{{execute}}
 
 
