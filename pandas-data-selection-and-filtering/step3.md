@@ -7,7 +7,7 @@ First, let's consider filtering our data by `year`. To get a good idea of the va
 
 If we want to filter the data frame to only include data before `2010` we do the following
 
-`df_select = df_select[df_select['year'] < 2010]`
+`df_select = df_select[df_select['year'] < 2010]`{{execute}}
 
 To ensure that our filtering worked we can print the unique set of `year` values once again:
 
