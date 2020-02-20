@@ -17,7 +17,7 @@ and finally, the closee:
 
 `print(df['Close'].pct_change().head())`{{execute}}
 
-We can also apply this transformation to all four columns simulataneously
+We can also apply this transformation to all four columns simulataneously:
 
 `print(df[["Open", "High", "Low", "Close"]].pct_change().head())`{{execute}}
 
