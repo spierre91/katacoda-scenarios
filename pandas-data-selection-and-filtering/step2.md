@@ -28,11 +28,11 @@ Let's now print the first five rows:
 
 Another thing we can do is engineer a few features from the `date_of_birth` column. First, Let's convert `date_of_birth` into a pandas datetime object:
 
-`df_select['date_of_birth'] = pd.to_datetime(df_select['date_of_birth'])`{{execute}}
+`df_select.loc[:, 'date_of_birth'] = pd.to_datetime(df_select['date_of_birth'])`{{execute}}
 
 Let's create a `week` column:
 
-`df_select['week'] = df_select['date_of_birth'].dt.week`{{execute}}
+`df_select.loc[:,'week'] = df_select['date_of_birth'].dt.week`{{execute}}
 
 Let's print the first five rows to analyze the result:
 
@@ -40,9 +40,9 @@ Let's print the first five rows to analyze the result:
 
 We can also create `month` and `year` columns:
 
-`df_select['month'] = df_select['date_of_birth'].dt.month`{{execute}}
+`df_select.loc[:,'month'] = df_select['date_of_birth'].dt.month`{{execute}}
 
-`df_select['year'] = df_select['date_of_birth'].dt.year`{{execute}}
+`df_select.loc[:,'year'] = df_select['date_of_birth'].dt.year`{{execute}}
 
 `print(df_select.head())`{{execute}}
 
