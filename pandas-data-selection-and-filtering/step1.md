@@ -5,9 +5,9 @@ This is some edited text.
 Here's a single line of runnable code:
 
 
-`print('hello world')`
+`print('hello world')`{{execute}}
 
-`print("THis is a block of code")`
+`print("THis is a block of code")`{{execute}}
 
 Here's a block of runnable code:
 
@@ -18,6 +18,6 @@ c = 3
 d = a + b + c
 
 d
-```
+```{{execute}}
 
 
