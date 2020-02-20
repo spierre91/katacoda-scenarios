@@ -11,4 +11,12 @@ Next let's import the pandas library and rename it as 'pd':
 
 `import pandas as pd`{{execute}}
 
-For our demonstration we will be using the
+For our demonstration we will be using the four data files. These file correspond to Google search trends for Tesla over the course of 5 years. The data was pulled using the Google Trends API. 
+
+Let's read in each file into their own pandas data frames:
+
+
+
+
+
+
