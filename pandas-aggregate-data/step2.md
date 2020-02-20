@@ -20,3 +20,16 @@ and finally, the closee:
 We can also apply this transformation to all four columns simulataneously
 
 `print(df[["Open", "High", "Low", "Close"]].pct_change().head())`{{execute}}
+
+We can also calculate open to close returns:
+
+`df['Returns'] = ((df['Close']-df['Open'])/df['Open'])*100.0`{{execute}}
+
+Print the ressult data frame:
+
+`print(df.head())`{{execute}}
+
+Finally we can generate percent change in returns:
+
+`print(df['Returns'].pct_change().head())`{{execute}}
+
