@@ -23,7 +23,9 @@ We see that we have an unnamed column. We can remove that with the following:
 
 `del df_2015['Unnamed: 0']`{{execute}}
 
-Let's reepeat this for 2016, 2017, 2018, and 2019:
+`print(df_2015.head())`{{execute}}
+
+Let's repeat this for 2016, 2017, 2018, and 2019:
 
 For 2016:
 
