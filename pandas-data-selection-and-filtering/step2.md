@@ -16,7 +16,7 @@ We can also print more than five rows. We can print the first 20 rows:
 Or even the last 20 rows using `tail`:
 `print(df_select.tail(20))`{{execute}}
 
-Another thing we can do is engineer a few features from the `date_of_birth` column. First, Let's convert `date_of_birth` into a pandas datetime object:
+Another thing we can do is engineer a few features from the `date_of_birth` column. First, let's convert `date_of_birth` into a Pandas datetime object:
 
 `df.loc[:, 'date_of_birth'] = pd.to_datetime(df['date_of_birth'])`{{execute}}
 
