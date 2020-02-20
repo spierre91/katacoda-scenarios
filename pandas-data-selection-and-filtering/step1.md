@@ -9,7 +9,7 @@ For our demonstration we will be using the Austin Animal Shelter data set. Let's
 
 `df = pd.read_csv("aac_shelter_outcomes.csv")`
 
-`print(df.head())
+`print(df.head())`
 
 
 
