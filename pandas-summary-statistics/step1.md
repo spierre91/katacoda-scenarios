@@ -15,7 +15,7 @@ In this post, we will demonstrate how we can use pandas to generate statistics l
 
 To get started, let's import the data into a pandas data frame:
 
-`df = pd.read_csv("fifa19.csv")`{{execute}}
+`df = pd.read_csv("fifa_19.csv")`{{execute}}
 
 Let's print the first five rows:
 
