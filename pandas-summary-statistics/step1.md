@@ -29,4 +29,4 @@ We can see that some of the rows are hidden. We can modify this by executing the
 
 Also, Let's filter the data frame to only include the columns we want:
 
-`df = df[['Name', 'Age', 'Nationality', Value', 'Wage', 'Preferred Foot', 'Height_cm', 'Weight_kg', Position', 'Overall']]`{{execute}}
+`df = df[['Name', 'Age', 'Nationality', 'Preferred Foot', 'Height', 'Weight', 'Position', 'Overall']]`{{execute}}
