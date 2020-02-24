@@ -5,7 +5,7 @@ Let's transform the height values into centimeters and the weight into kilograms
 
 To convert the height we execute the following block of code:
 
-`
+```
 Height_cm = []
 for i in list(df['Height'].values):
     try:
@@ -14,13 +14,4 @@ for i in list(df['Height'].values):
         Height_cm.append(np.nan)
         
 df['Height_cm'] = Height_cm
-`{{execute}}
-
-
-To conver the weight we execute the following:
-`df['Weight_kg'] = df['Weight'].str[:3].astype(float)/2.20462`{{execute}}
-
-
-Let's calculate the mean `Height` of all the soccer players:
-
-`print("Mean Height: ", df['Height'].mean())`{{execute}}
+```{{execute}}
