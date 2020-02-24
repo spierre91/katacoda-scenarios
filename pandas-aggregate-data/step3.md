@@ -1,4 +1,4 @@
-# Calculating Pairwise Covariance, Cummulative Sum,  and Rolling Mean
+# Calculating Pairwise Covariance, Cummulative Sum, and Rolling Mean
 
 Finally, we can calculate the pairwise covariance for the series in the pandas data frame. A this will return a convariance matrix corresponding to the columns in the data frame. This helps us analyze the direction of the linear relationship between two variables. To calculate pairwise covariance we do the following:
 
@@ -12,7 +12,7 @@ We can also look at the cummulative sum. This allows us to analyze the total con
 `print(df.cumsum().head())`{{execute}}
 
 Finally, we can calculation the rolling mean. Rolling mean is typically used to smooth out noise in time series data and reveal long-term trends in the data. Let's calculate the rollowing mean with a window size of 5 :
-`print(df['Open'].rolling(window = 5).mean().head(20))`{{execute}}
+`print(df.rolling(window = 5).mean().head(20))`{{execute}}
 
 We can play around with the window size. Let's try a window size of 10:
-`print(df['Open'].rolling(window = 10).mean().head(20))`{{execute}}
+`print(df.rolling(window = 10).mean().head(20))`{{execute}}
