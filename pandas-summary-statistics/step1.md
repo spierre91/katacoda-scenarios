@@ -1,4 +1,4 @@
-# Reading FIFA Data with Pandas
+# Reading FIFA19 Data with Pandas
 The first thing we need to do is clone the GitHub repo containing the necessary data we will be using. In the terminal on the righthand side copy and paste the following and press enter:
 `git clone https://github.com/spierre91/katacoda-scenarios`
 
