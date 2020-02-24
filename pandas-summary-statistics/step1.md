@@ -20,3 +20,9 @@ To get started, let's import the data into a pandas data frame:
 Let's print the first five rows:
 
 `print(df.head())`{{execute}}
+
+We can see that some of the rows are hidden. We can modify this by executing the following:
+
+`pd.set_option('display.max_columns', None)`
+
+`pd.set_option('display.max_rows', None)`
