@@ -11,7 +11,7 @@ Next let's import the pandas library and rename it as 'pd':
 
 `import pandas as pd`{{execute}}
 
-In this example we will be combining MSFT stock price and google trends data using pandas. Combining data is an important part of sourcing useful signals of machine learning. 
+In this example we will be combining MSFT stock price and google trends data using pandas. Combining data is often neccessary when you have data stored in multiple files, worksheets or data tables. In my expeerience, combining data has been an important part of sourcing useful signals for buidling predictive models.
 
 Let's read the MSFT stock prices into a pandas data frame:
 `df_stock = pd.read_csv("msft_stock_price.csv")`{{execute}}
@@ -22,3 +22,6 @@ Let's print the first five rows:
 Let's also read the google trends data into a pandas data frame
 
 `df_trends = pd.read_csv("msft_google_trends.csv")`{{execute}}
+
+Let's print the first five rows:
+`print(df_trends.head())`{{execute}}
