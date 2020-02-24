@@ -26,3 +26,7 @@ We can see that some of the rows are hidden. We can modify this by executing the
 `pd.set_option('display.max_columns', None)`
 
 `pd.set_option('display.max_rows', None)`
+
+Also, Let's filter the data frame to only include the columns we want:
+
+`df = df[['Name', 'Age', 'Nationality', Value', 'Wage', 'Preferred Foot', 'Height_cm', 'Weight_kg', Position', 'Overall']]`{{execute}}
