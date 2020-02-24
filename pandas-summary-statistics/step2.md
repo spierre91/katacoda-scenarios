@@ -1,4 +1,4 @@
-# Generating Statistics from Numerical Variables
+# Generating Statistics from Numerical Columns
 
 We can calcualte statical values like mean, maximum, minimum and standard deviation for any of the numerical columns. 
 
