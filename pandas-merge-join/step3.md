@@ -35,17 +35,11 @@ We can see that the indices of both data frames are different.
 
 
 We can join the data frame by executing the following:
-`df = df_stock.join(df_trends, on = 'Date')`{{execute}}
+`df = df_stock.join(df_trends, on = 'Year')`{{execute}}
 
 Let's print the first five rows:
 `print(df.head())`{{execute}}
 
-
-We can also join in the reverse direction:
-`df = df_trends.join(df_stock)`{{execute}}
-
-Let's print the first five rows:
-`print(df.head())`{{execute}}
 
 
 
