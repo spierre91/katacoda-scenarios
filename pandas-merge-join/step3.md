@@ -35,7 +35,7 @@ We can see that the indices of both data frames are different.
 
 
 We can join the data frame by executing the following:
-`df = df_stock.join(df_trends, how='outer)`{{execute}}
+`df = df_stock.join(df_trends, how='outer')`{{execute}}
 
 Let's print the first five rows:
 `print(df.head())`{{execute}}
