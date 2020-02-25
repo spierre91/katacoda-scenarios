@@ -2,7 +2,7 @@
 
 To be able to merge our data, let's create year and week columns. First, we need to convert the date columns into pandas datetime objects:
 
-Let's start with the MSFT stock price data. Let'ss convert the `Date` column into a datetime object:
+Let's start with the MSFT stock price data. Let's convert the `Date` column into a datetime object:
 
 `df_stock['Date'] = pd.to_datetime(df_stock['Date'])`{{execute}}
 
