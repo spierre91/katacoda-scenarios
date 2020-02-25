@@ -21,7 +21,7 @@ And print the first five rows:
 Next we will take a look at `join()`. Join is used when you want to combine two data frames with different indices. 
 For example, let's set the index of the stock price data frame to be the `Date`:
 
-`df_stock.set_index('Date', inplace = True)`{{execute}}
+`df_stock.set_index('Year', inplace = True)`{{execute}}
 
 Let's print the first five rows to see the results:
 `print(df_stock.head())`{{execute}}
