@@ -21,4 +21,4 @@ Next, let's do the same for the `Week` column:
 `df_trends['Week Number'] = df_trends['Week'].dt.week`{{execute}}
 
 And we can print the first five rows:
-`print(df_stock.head())`{{execute}}
+`print(df_trends.head())`{{execute}}
