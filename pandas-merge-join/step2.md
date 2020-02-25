@@ -1,4 +1,4 @@
-#Creating 'Merge' Columns 
+# Creating Merge Columns 
 
 To be able to merge our data, let's create year and week columns. First, we need to convert the date columns into pandas datetime objects:
 
