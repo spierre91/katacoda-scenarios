@@ -1,4 +1,4 @@
-#Merge and Joining Data
+#Merging and Joining Data
 
 First we will merge both data sets on the `Year` and `Week Number` columns we created:
 
