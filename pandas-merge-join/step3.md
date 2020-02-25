@@ -40,6 +40,8 @@ We can join the data frame by executing the following:
 Let's print the first five rows:
 `print(df.head())`{{execute}}
 
+In general, using the `merge()` method is more convenient than the `join()` method. This is because there are more restrictions on performing joins. 
+
 
 
 
