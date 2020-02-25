@@ -9,3 +9,43 @@ Let's print the first five rows of the merged data set:
 
 `print(df.head())`{{execute}}
 
+We can expand the columns using the following:
+
+`pd.set_option('display.max_columns', None)`{{execute}}
+
+And print the first five rows:
+
+`print(df.head())`{{execute}}
+
+
+Next we will take a look at `join()`. Join is used when you want to combine two data frames with different indices. 
+For example, let's set the index of the stock price data frame to be the `Date`:
+
+`df_stock.set_index('Date', inplace = True)`{{execute}}
+
+Let's print the first five rows to see the results:
+`print(df_stock.head())`{{execute}}
+
+
+Let's print the first five rows of the google trends data:
+`print(df_trends.head())`{{execute}}
+
+
+We can see that the indices of both data frames are different. 
+
+
+We can join the data frame by executing the following:
+`df = df_stock.join(df_trends)`{{execute}}
+
+Let's print the first five rows:
+`print(df.head())`{{execute}}
+
+
+We can also join in the reverse direction:
+`df = df_trends.join(df_stock)`{{execute}}
+
+Let's print the first five rows:
+`print(df.head())`{{execute}}
+
+
+
