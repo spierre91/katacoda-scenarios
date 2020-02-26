@@ -1,6 +1,6 @@
 # Generating Statistics from Categorical Columns
 
-For categorical columns, we can look at the mode. The mode is simply the value that appears most often.  We can calculate this statistic for columns like `Nationality` and and `Position`. 
+For categorical columns, we can look at the mode. The mode is simply the value that appears most often.  We can calculate this statistic for columns like `Nationality` and `Position`. 
 
 
 Let's print the mode of the `Nationality` column:
