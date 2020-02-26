@@ -1,6 +1,6 @@
 # Generating Statistics from Numerical Columns
 
-We can calcualte statical values like mean, maximum, minimum and standard deviation for any of the numerical columns. 
+We can calculate statistical values like mean, maximum, minimum and standard deviation for any of the numerical columns. 
 
 
 Most readers will be familiar with the statistical mean but as a reminder it is the sum of all the numerical values divided by the number of values. In short, it represents the central value of a discrete set of numbers. Let's print the mean `height` of all soccer players:
