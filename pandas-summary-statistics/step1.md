@@ -1,11 +1,12 @@
 # Reading Data with Pandas
-The first thing we need to do is clone the GitHub repo containing the necessary data we will be using. In the terminal on the right-hand side copy and paste the following and press enter:
-`git clone https://github.com/spierre91/katacoda-scenarios`
+The first thing we need to do is clone the GitHub repo containing the necessary data we will be using:
 
-Next we need to go into the folder corresponding to the summary statistics scenario. Copy and paste the following and press enter:
-`cd katacoda-scenarios/pandas-summary-statistics`
+`git clone https://github.com/spierre91/katacoda-scenarios`{{execute}}
 
-Now let's open up the python interactive shell by typing `python` and pressing enter in the terminal window on the right.
+Next we need to go into the folder corresponding to the data summary statistics scenario:
+`cd katacoda-scenarios/pandas-summary-statistics`{{execute}}
+
+Now let's open up the python interactive shell: `python`{{execute}}
 
 Next let's import the Pandas library and rename it as 'pd':
 
