@@ -1,6 +1,6 @@
 # Merging and Joining Data 
 
-First we will merge both data sets on the `Year` and `Week Number` columns we created:
+First, we will merge both data sets on the `Year` and `Week Number` columns we created:
 
 
 `df = pd.merge(df_stock, df_trends, on = ['Year', 'Week Number'])`{{execute}}
