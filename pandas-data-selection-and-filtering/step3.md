@@ -13,7 +13,7 @@ To ensure that our filtering worked we can print the unique set of `year` values
 
 `print(set(df_select['year'].values))`{{execute}}
 
-We can also filter by categorical values. In our current data frame we have the `sex_upon_outcome` column which contains categorical values. Let's print the unique set of values for `sex_upon_outcome`.
+We can also filter by categorical values. In our current data frame, we have the `sex_upon_outcome` column which contains categorical values. Let's print the unique set of values for `sex_upon_outcome`.
 
 `print(set(df_select['sex_upon_outcome'].values))`{{execute}}
 
@@ -31,6 +31,7 @@ We can also filter based on a list of categorical values. If we only want `sex_u
 And printing the unique set:
 `print(set(df_select_new['sex_upon_outcome'].values))`{{execute}}
 
-verifies the result. 
+verifies the result.
+
 
 
