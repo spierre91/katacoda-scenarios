@@ -5,7 +5,7 @@ The first thing we need to do is clone the GitHub repo containing the necessary 
 `git clone https://github.com/spierre91/katacoda-scenarios`{{execute}}
 
 Next we need to go into the folder corresponding to the data selection and filtering scenario:
-`cd katacoda-scenarios/pandas-aggregate-data`{{execute}}
+`cd katacoda-scenarios/pandas-data-selection-and-filtering`{{execute}}
 
 Now let's open up the python interactive shell: `python`{{execute}}
 
