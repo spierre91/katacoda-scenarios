@@ -1,6 +1,6 @@
 # Writing Concatenated Files to CSV with Pandas
 
-For this lasst step will will write the `combined_df` to a new CSV file. To do this we use the `to_csv()` method in pandas:
+For this last step we will write the `combined_df` to a new CSV file. To do this we use the `to_csv()` method in pandas:
 
 `combined_df.to_csv("combined_tesla_files.csv")`{{execute}}
 
@@ -19,4 +19,4 @@ Finally, let's print the unique set of `year` values:
 
 `print(set(df['year'].values))`{{execute}}
 
-And we see that we have all the year values we expect. 
+And we see that we have all the year values we expect.
