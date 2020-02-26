@@ -1,4 +1,4 @@
-# Calculating Pairwise Covariance, Cummulative Sum, and Rolling Mean
+# Calculating Pairwise Covariance, Cumulative Sum, and Rolling Mean
 
 Finally, we can calculate the pairwise covariance for the series in the pandas data frame. This will return a covariance matrix corresponding to the columns in the data frame. Covariance calculations help us analyze the direction of the linear relationship between two variables. To calculate pairwise covariance we do the following:
 
