@@ -6,7 +6,8 @@ The first thing we need to do is clone the GitHub repo containing the necessary 
 Next we need to go into the folder corresponding to the data concatenation scenario:
 `cd katacoda-scenarios/pandas-concatenate-data`{{execute}}
 
-Now let's open up the python interactive shell: `python`{{execute}}
+Now let's open up the python interactive shell: 
+`python`{{execute}}
 
 Next let's import the Pandas library and rename it as 'pd':
 
