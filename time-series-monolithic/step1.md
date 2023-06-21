@@ -3,8 +3,10 @@ The first thing we need to do is clone the GitHub repo containing the necessary 
 
 `git clone https://github.com/spierre91/katacoda-scenarios`{{execute}}
 
-Next we need to go into the folder corresponding to the data aggregation lab:
+Next we need to go into the folder corresponding to the monolithic time serie analysis lab:
 `cd katacoda-scenarios/time-series-monolithic`{{execute}}
+
+We start by importing necessary packages:
 
 `from statsmodels.tsa.api import SimpleExpSmoothing`{{execute}}
 
@@ -24,38 +26,47 @@ Next we need to go into the folder corresponding to the data aggregation lab:
 
 `from statsmodels.tsa.seasonal import seasonal_decompose`{{execute}}
 
+Next we read our data into a pandas dataframe, and display the first five rows of data:
+
 `df = pd.read_csv("synthetic_transaction_data_Dining.csv")`{{execute}}
 
 `df.head()`{{execute}}
+
+We then can convert the `transaction_date` column to a pandas datetime object and filter out the rows after June 1, 2023
 
 `df["transaction_date"] = pd.to_datetime(df["transaction_date"])`{{execute}}
 
 `df = df[df["transaction_date"] < '2023-06-01']`{{execute}}
 
-
-`df['transaction_date'] = pd.to_datetime(df['transaction_date'])`{{execute}}
+Next we can look at a specific merchant. Let's filter for  "McDonald's" and store the result in a data frame called `fast_food`:
 
 `fast_food = df[df['merchant_name'] == "McDonald's"]`{{execute}}
 
 `fast_food.head()`{{execute}}
 
+# Remove outliers from the DataFrame
 
+As a data processing step, we can filter outlier using the Z-score method:
 `z_scores = np.abs((fast_food['transaction_amount'] - fast_food['transaction_amount'].mean()) / fast_food['transaction_amount'].std())`{{execute}}
 
-# Define a threshold (e.g., Z-score > 3) to identify outliers
+
 `threshold = 3`{{execute}}
 
-# Remove outliers from the DataFrame
+
 `fast_food = fast_food[z_scores < threshold]`{{execute}}
+
+We can then perform a groupby sum on the `transaction_amount` column by for every `transaction_date`:
 
 `df_grouped = fast_food.groupby(fast_food['transaction_date'].dt.date)['transaction_amount'].sum().reset_index()`{{execute}}
 
-# Plot the grouped data using Plotly
+We can then plot the grouped data using Plotly:
+
 `fig = px.line(df_grouped, x='transaction_date', y='transaction_amount', title='Total Transaction Amount by Day')`{{execute}}
 
 `fig.show()`{{execute}}
 
-    
+We can perform these operations in a for-loop and visualize the grouped time series for the first five merchants:
+
 ```
 for group in list(set(df['merchant_name']))[:5]:
     subgroup = df[df['merchant_name'] == group].copy()
