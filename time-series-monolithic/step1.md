@@ -65,8 +65,64 @@ We can then plot the grouped data using Plotly:
 
 `fig.show()`{{execute}}
 
-We can perform these operations in a for-loop and visualize the grouped time series for the first five merchants:
+We can perform these operations in a for-loop and visualize the grouped time series for the first five merchants. 
 
+Let' start by generating Z-scores for each merchant and filteering out ooutliers:
+```
+for group in list(set(df['merchant_name']))[:5]:
+    subgroup = df[df['merchant_name'] == group].copy()
+    merchant_category = list(set(subgroup['merchant_category']))[0]
+    z_scores = np.abs((subgroup['transaction_amount'] - subgroup['transaction_amount'].mean()) / subgroup['transaction_amount'].std())
+
+    # Define a threshold (e.g., Z-score > 3) to identify outliers
+    threshold = 3
+
+    # Remove outliers from the DataFrame
+    subgroup = subgroup[z_scores < threshold]
+```
+We can then create a month-year column which we will use to peerform our groupby operation. It will also specify the granularity oof oour forecasts:
+
+```
+for group in list(set(df['merchant_name']))[:5]:
+    .... #preceeding code truncated for clarity
+    # create week-year column
+    subgroup['month'] = subgroup['transaction_date'].dt.month
+    subgroup = subgroup[subgroup['month'] <= 12]
+    subgroup = subgroup[subgroup['month'] >= 1]
+    subgroup['month'] = subgroup['month'].astype(str)
+
+    subgroup['year'] = subgroup['transaction_date'].dt.year
+    subgroup['year'] = subgroup['year'].astype(str)
+
+    subgroup['month_year'] =  subgroup['year'] + "-"+  subgroup['month'] 
+    subgroup['month_year'] = pd.to_datetime(subgroup['month_year'])
+    print(subgroup['month_year'].max())
+
+```
+We can then perform our groupby and generate line plots for each merchant:
+```
+for group in list(set(df['merchant_name']))[:5]:
+    .... #preceeding code truncated for clarity
+    df_grouped = subgroup.groupby('month_year')['transaction_amount'].sum().reset_index()
+
+    df_grouped = df_grouped.set_index('month_year').sort_index()
+    
+    trace = go.Scatter(
+    x=df_grouped.index,
+    y=df_grouped['transaction_amount'],
+    mode='lines',
+    connectgaps=True)
+    layout = go.Layout(
+        title=f'{merchant_category}: {group} Total Transaction Amount by month-year',
+    )
+    # Create the figure and add the trace
+    fig = go.Figure(layout=layout)
+    fig.add_trace(trace)
+    fig.show()
+
+```
+
+The full code block is:
 ```
 for group in list(set(df['merchant_name']))[:5]:
     subgroup = df[df['merchant_name'] == group].copy()
@@ -92,15 +148,9 @@ for group in list(set(df['merchant_name']))[:5]:
     subgroup['month_year'] = pd.to_datetime(subgroup['month_year'])
     print(subgroup['month_year'].max())
 
-
-
-
     df_grouped = subgroup.groupby('month_year')['transaction_amount'].sum().reset_index()
 
-
-
     df_grouped = df_grouped.set_index('month_year').sort_index()
-     
     
     trace = go.Scatter(
     x=df_grouped.index,
