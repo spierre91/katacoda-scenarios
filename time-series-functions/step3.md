@@ -25,7 +25,7 @@ def perform_seasonal_decomposition(df_grouped):
     fig.show()
 ```
 
-We call our `plot_training_testing_predictions` with our taining data, test data and prdictions:
+We call our `plot_training_testing_predictions` with our taining data, test data and predictions:
 
 `plot_training_testing_predictions(train_data, test_data, predictions)`{{execute}}
 
