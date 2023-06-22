@@ -2,13 +2,13 @@
 
 We can start by defining a function that reads in our data, converts `transaction_date` into a pandas datetime, and filter out row before June 1, 2023:
 
-`
+````
 def read_data(file_path):
     df = pd.read_csv(file_path)
     df["transaction_date"] = pd.to_datetime(df["transaction_date"])
     df = df[df["transaction_date"] < '2023-06-01']
     return df
-`{{execute}}
+````{{execute}}
 
 
 Next we will define a function that plots the daily transaction amounts 
