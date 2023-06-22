@@ -121,5 +121,5 @@ merchant_name = "Domino's Pizza"
 preparer = TransactionDataAnalyzer(df)
 df_grouped = preparer.group_by_month_year(merchant_name)
 
-```
+```{{execute}}
 
