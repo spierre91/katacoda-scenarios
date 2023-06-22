@@ -7,6 +7,8 @@ def read_data(file_path):
     return df
 ``` {{execute}}
 
+Next:
+
 ```
 def plot_total_amount_by_day(df):
     df_grouped = df.groupby(df['transaction_date'].dt.date)['transaction_amount'].sum().reset_index()
