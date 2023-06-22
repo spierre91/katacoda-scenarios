@@ -25,6 +25,7 @@ class TransactionModelTrainer:
     def predict(model, test_data):
         predictions = model.predict(n_periods=len(test_data))
         return predictions
+```
 
 ```
 class TransactionModelTrainer:
