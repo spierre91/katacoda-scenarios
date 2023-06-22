@@ -22,6 +22,10 @@ def plot_total_amount_by_day(df):
 
 Next we will define a function that alloows us to plot our time series at a monthly granularity. The function will take a dataframe and a list of merchants and display line plots of our time series data for each merchant:
 
+
+
+
+
 ```
 def plot_amount_by_month_year(df, merchant_names):
     for merchant_name in merchant_names:
@@ -40,20 +44,34 @@ def plot_amount_by_month_year(df, merchant_names):
         fig = go.Figure(layout=layout)
         fig.add_trace(trace)
         fig.show()
-  ```
+  ```{{execute}}
+
+
+
+
+
 
 
 We can now call our `read_data` function with the name of our file and store the results in a variable called `df`:
 
-`df = read_data("synthetic_transaction_data_Dining.csv")`{{execute}}
+`df = read_data("synthetic_transaction_data_Dining.csv")`
 
 Plot the `transaction_amounts` at daily granularity:
 
-`plot_total_amount_by_day(df)`{{execute}}
+`plot_total_amount_by_day(df)`
 
 
 Also plot the time `transaction_amounts` at monthly granularity:
 
-`merchant_names = list(set(df['merchant_name']))[:5]`{{execute}}
+`merchant_names = list(set(df['merchant_name']))[:5]`
 
 `plot_amount_by_month_year(df, merchant_names)`
+
+The full code block is:
+
+```
+
+
+
+
+```
