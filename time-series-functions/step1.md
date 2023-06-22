@@ -8,10 +8,10 @@ def read_data(file_path):
     df["transaction_date"] = pd.to_datetime(df["transaction_date"])
     df = df[df["transaction_date"] < '2023-06-01']
     return df
-```{{execute}}
+```{{{execute}}}
 
 
-Next:
+Next we will define a function that plots the daily transaction amounts 
 
 ```
 def plot_total_amount_by_day(df):
