@@ -110,4 +110,16 @@ def calculate_rmse(actual, predicted):
     rmse = mse ** 0.5
     return rmse
 
+merchant_name = "Domino's Pizza"
+df_grouped = time_series_analysis(df, merchant_name)
+
+train_data, test_data = split_train_test_data(df_grouped)
+
+model = train_auto_arima_model(train_data)
+predictions = predict(model, test_data)
+
+rmse = calculate_rmse(test_data['transaction_amount'], predictions)
+print('RMSE:', rmse)
+
+
 ```{{execute}}
