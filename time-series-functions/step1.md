@@ -40,4 +40,5 @@ def plot_amount_by_month_year(df, merchant_names):
 `plot_total_amount_by_day(df)`{{execute}}
 
 `merchant_names = list(set(df['merchant_name']))[:5]`{{execute}}
-plot_amount_by_month_year(df, merchant_names)
+
+`plot_amount_by_month_year(df, merchant_names)`
