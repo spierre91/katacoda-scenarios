@@ -2,23 +2,23 @@
 
 We can start by defining a function that reads in our data, converts `transaction_date` into a pandas datetime, and filter out row before June 1, 2023:
 
-``
+```
 def read_data(file_path):
     df = pd.read_csv(file_path)
     df["transaction_date"] = pd.to_datetime(df["transaction_date"])
     df = df[df["transaction_date"] < '2023-06-01']
     return df
-``{{execute}}
+```
 
 
-Next we will define a function that plots the daily transaction amounts 
+Next we will define a function that plots the daily transaction amounts. We first perform a groupby sum on `transaction_amount` by `transaction_date` and use the Plotly express line method to plot the time series:
 
 ```
 def plot_total_amount_by_day(df):
     df_grouped = df.groupby(df['transaction_date'].dt.date)['transaction_amount'].sum().reset_index()
     fig = px.line(df_grouped, x='transaction_date', y='transaction_amount', title='Total Transaction Amount by Day')
     fig.show()
-```{{execute}}
+```
 
 ```
 def plot_amount_by_month_year(df, merchant_names):
