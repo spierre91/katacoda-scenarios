@@ -1,5 +1,6 @@
 
-```def read_data(file_path):
+```
+def read_data(file_path):
     df = pd.read_csv(file_path)
     df["transaction_date"] = pd.to_datetime(df["transaction_date"])
     df = df[df["transaction_date"] < '2023-06-01']
