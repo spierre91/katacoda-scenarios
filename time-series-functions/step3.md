@@ -1,4 +1,6 @@
-# ploting predictioons and visualizing seasonalit 
+# Ploting predictions and visualizing seasonality 
+
+Next we will define a function that visualizes the training, testing and predicition data:
 
 ```
 def plot_training_testing_predictions(train_data, test_data, predictions):
@@ -8,6 +10,8 @@ def plot_training_testing_predictions(train_data, test_data, predictions):
     fig.add_trace(go.Scatter(x=test_data.index, y=predictions, name='Predictions'))
     fig.show()
 ```
+
+We will also define a function that allows us to visualize seasonality:
 
 ```
 def perform_seasonal_decomposition(df_grouped):
@@ -21,6 +25,10 @@ def perform_seasonal_decomposition(df_grouped):
     fig.show()
 ```
 
+We call our `plot_training_testing_predictions` with our taining data, test data and prdictions:
+
 `plot_training_testing_predictions(train_data, test_data, predictions)`{{execute}}
+
+And call the `perform_seasonal_decomposition` with our aggregated data:
 
 `perform_seasonal_decomposition(df_grouped)`{{execute}}
