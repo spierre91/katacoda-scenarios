@@ -9,6 +9,7 @@ def read_data(file_path):
     df = df[df["transaction_date"] < '2023-06-01']
     return df
 ```
+{{execute}}
 
 Next:
 
