@@ -1,6 +1,6 @@
 # Defining a class for time series data visualization
 
-Leet's proceed by defining a class called `TransactionDataVisualizer` and a `@staticmethod` called  `plot_total_amount_by_day` that we will use to plot daily transactions over time:
+Let's proceed by defining a class called `TransactionDataVisualizer` and a `@staticmethod` called  `plot_total_amount_by_day` that we will use to plot daily transactions over time:
 
 ```
 class TransactionDataVisualizer:
@@ -63,6 +63,18 @@ And plot the daily transactions:
 
 `visualizer.plot_total_amount_by_day(df_grouped)`
 
+Let's define a list of merchants:
+
+`merchant_names = list(set(df['merchant_name']))[:5]`
+
+And a for-loop over the merchant list that performs a monht_year group by on the `transaction_amoount` and plots the aggregated time series:
+
+```
+for merchant_name in merchant_names:
+    df_grouped = analyzer.group_by_month_year(merchant_name)
+    visualizer.plot_amount_by_month_year(df_grouped, merchant_name)
+```
+
 
 The full code block is:
 
@@ -103,5 +115,13 @@ class TransactionDataVisualizer:
 
 visualizer = TransactionDataVisualizer()
 visualizer.plot_total_amount_by_day(df_grouped)
+
+merchant_names = list(set(df['merchant_name']))[:5]
+
+for merchant_name in merchant_names:
+    df_grouped = analyzer.group_by_month_year(merchant_name)
+    visualizer.plot_amount_by_month_year(df_grouped, merchant_name)
+
+
 ```{{execute}}
 
