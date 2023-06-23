@@ -1,3 +1,7 @@
+# Defining a class for training our ARIMA model and visualizing predictions 
+
+Let's define a new class call `TransactionModelTrainer` and a `@staticmethod` called `split_train_test_data` that allows us to split our  data for training and testing:
+
 ```
 class TransactionModelTrainer:
     @staticmethod
@@ -9,6 +13,8 @@ class TransactionModelTrainer:
         return train_data, test_data
 ```
 
+Next let's define another `@staticmethod` called `train_auto_arima_model` that trains our ARIMA model on our training data:
+
 ```
 class TransactionModelTrainer:
     #... code truncated for clarity
@@ -18,6 +24,8 @@ class TransactionModelTrainer:
         return model
 ```
 
+We can then define a `@staticmethod` called `predict` that allow us to generate predictions on our test data:
+
 ```
 class TransactionModelTrainer:
     #... code truncated for clarity
@@ -26,6 +34,8 @@ class TransactionModelTrainer:
         predictions = model.predict(n_periods=len(test_data))
         return predictions
 ```
+
+Finally, we can define a `@staticmethod` called `calculate_rmse` that allows us to calculate the RMSE of our predictions:
 
 ```
 class TransactionModelTrainer:
@@ -37,13 +47,7 @@ class TransactionModelTrainer:
         return rmse
 ```
 
-`merchant_names = list(set(df['merchant_name']))[:5]`
 
-```
-for merchant_name in merchant_names:
-    df_grouped = analyzer.group_by_month_year(merchant_name)
-    visualizer.plot_amount_by_month_year(df_grouped, merchant_name)
-```
 
 `trainer = TransactionModelTrainer()`
 
