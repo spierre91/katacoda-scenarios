@@ -48,18 +48,30 @@ class TransactionModelTrainer:
 ```
 
 
+We can define an intance of our `TransactionModelTrainer` class:
 
 `trainer = TransactionModelTrainer()`
 
+We'll also specify the merchant we plan to model:
+
 `merchant_name = "Domino's Pizza"`
+
+Split our data for traiining and testing:
 
 `train_data, test_data = trainer.split_train_test_data(analyzer.group_by_month_year(merchant_name))`
 
+Train our ARIMA model:
+
 `model = trainer.train_auto_arima_model(train_data)`
+
+Generate predictions on our test set:
 
 `predictions = trainer.predict(model, test_data)`
 
+Calculate and print RMSE:
+
 `rmse = trainer.calculate_rmse(test_data['transaction_amount'], predictions)`
+
 
 `print('RMSE:', rmse)`
 
