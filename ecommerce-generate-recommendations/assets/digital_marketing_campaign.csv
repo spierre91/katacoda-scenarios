@@ -1,0 +1,216 @@
+card_name,product_recommendations,clicks,impressions
+Matthew Thompson,Apple AirPods,3,89
+Matthew Thompson,Samsung Galaxy Tab,0,31
+Matthew Thompson,Apple Watch,1,95
+Matthew Thompson,Samsung Galaxy Book,1,22
+Matthew Thompson,Bose SoundSport Free Truly Wireless Sport Headphones,2,45
+Sydney Powell,Samsung Galaxy Tab,2,37
+Sydney Powell,Samsung Galaxy S21,2,44
+Sydney Powell,Sony WF-1000XM3 True Wireless Earbuds,0,29
+Sydney Powell,Samsung Galaxy Book,1,95
+Sydney Powell,Sony WH-1000XM4 Wireless Noise Cancelling Headphones,3,89
+Clifford Stanley,Apple iPhone,0,21
+Clifford Stanley,Apple AirPods,0,40
+Clifford Stanley,Samsung Galaxy S21,2,26
+Clifford Stanley,Samsung Galaxy Tab,3,80
+Clifford Stanley,Apple Watch,1,44
+Ashley Perry,Bose QuietComfort 35 II Wireless Bluetooth Headphones,3,42
+Ashley Perry,Samsung Galaxy Tab,3,61
+Ashley Perry,Sony WF-1000XM3 True Wireless Earbuds,0,91
+Ashley Perry,Apple Watch,3,99
+Ashley Perry,Samsung Galaxy Book,0,56
+Deanna Adams,Apple AirPods,1,80
+Deanna Adams,Samsung Galaxy S21,0,68
+Deanna Adams,Apple MacBook,2,45
+Deanna Adams,Samsung Galaxy Book,3,40
+Deanna Adams,Samsung Galaxy Buds,2,95
+Jennifer Campos,Apple iPhone,3,38
+Jennifer Campos,Apple AirPods,0,70
+Jennifer Campos,Samsung Galaxy Tab,3,61
+Jennifer Campos,Apple MacBook,1,81
+Jennifer Campos,Apple Watch,2,39
+John Ferguson,Bose QuietComfort 35 II Wireless Bluetooth Headphones,2,29
+John Ferguson,Samsung Galaxy S21,1,38
+John Ferguson,Apple Watch,3,95
+John Ferguson,Sony PlayStation 5 Console,3,23
+John Ferguson,Sony X800H 4K Ultra HD Smart LED TV,1,20
+Dennis Mercado,Apple AirPods,1,83
+Dennis Mercado,Samsung Galaxy S21,2,64
+Dennis Mercado,Apple MacBook,2,62
+Dennis Mercado,Apple iPad,1,53
+Dennis Mercado,Samsung Galaxy Watch,1,80
+Rebecca Anthony,Bose QuietComfort 35 II Wireless Bluetooth Headphones,0,53
+Rebecca Anthony,Samsung Galaxy Tab,0,25
+Rebecca Anthony,Samsung Galaxy S21,1,33
+Rebecca Anthony,Sony WF-1000XM3 True Wireless Earbuds,2,86
+Rebecca Anthony,Apple Watch,0,28
+George Castillo,Bose QuietComfort 35 II Wireless Bluetooth Headphones,2,34
+George Castillo,Apple iPhone,3,95
+George Castillo,Samsung Galaxy Tab,0,40
+George Castillo,Sony PlayStation 5 Console,0,25
+George Castillo,Sony X800H 4K Ultra HD Smart LED TV,0,31
+Scott Watkins,Bose QuietComfort 35 II Wireless Bluetooth Headphones,3,83
+Scott Watkins,Apple iPhone,3,28
+Scott Watkins,Apple AirPods,1,97
+Scott Watkins,Sony WF-1000XM3 True Wireless Earbuds,2,60
+Scott Watkins,Apple MacBook,0,64
+Sherry Taylor,Apple iPhone,2,79
+Sherry Taylor,Apple AirPods,1,51
+Sherry Taylor,Samsung Galaxy S21,3,74
+Sherry Taylor,Samsung Galaxy Tab,1,42
+Sherry Taylor,Sony WF-1000XM3 True Wireless Earbuds,0,24
+Christina Bryan,Apple AirPods,3,44
+Christina Bryan,Samsung Galaxy S21,2,65
+Christina Bryan,Sony WF-1000XM3 True Wireless Earbuds,2,90
+Christina Bryan,Samsung Galaxy Book,2,84
+Christina Bryan,Sony PlayStation 5 Console,1,20
+Mrs. Teresa Willis,Apple iPhone,3,99
+Mrs. Teresa Willis,Apple AirPods,2,67
+Mrs. Teresa Willis,Samsung Galaxy Tab,2,74
+Mrs. Teresa Willis,Sony WF-1000XM3 True Wireless Earbuds,3,50
+Mrs. Teresa Willis,Apple MacBook,1,85
+Rachel Downs,Bose QuietComfort 35 II Wireless Bluetooth Headphones,2,37
+Rachel Downs,Apple iPhone,3,39
+Rachel Downs,Apple AirPods,3,39
+Rachel Downs,Sony WF-1000XM3 True Wireless Earbuds,0,51
+Rachel Downs,Samsung Galaxy Book,1,67
+Cody English,Apple iPhone,1,46
+Cody English,Apple AirPods,3,62
+Cody English,Samsung Galaxy S21,2,74
+Cody English,Samsung Galaxy Tab,3,52
+Cody English,Sony WF-1000XM3 True Wireless Earbuds,1,72
+Joshua Woods,Apple iPhone,2,96
+Joshua Woods,Apple MacBook,0,78
+Joshua Woods,Sony X800H 4K Ultra HD Smart LED TV,0,63
+Joshua Woods,Sony WH-1000XM4 Wireless Noise Cancelling Headphones,0,41
+Joshua Woods,Sony Alpha a6400 Mirrorless Camera,3,25
+Nicholas Powell,Bose QuietComfort 35 II Wireless Bluetooth Headphones,1,29
+Nicholas Powell,Apple AirPods,0,78
+Nicholas Powell,Samsung Galaxy Tab,3,86
+Nicholas Powell,Apple Watch,1,35
+Nicholas Powell,Samsung Galaxy Watch,0,73
+Zachary Simpson,Bose QuietComfort 35 II Wireless Bluetooth Headphones,0,94
+Zachary Simpson,Sony PlayStation 5 Console,1,53
+Zachary Simpson,Apple iPad,2,36
+Zachary Simpson,Samsung Galaxy Watch,2,91
+Zachary Simpson,Sony X800H 4K Ultra HD Smart LED TV,2,74
+Richard Torres Jr.,Bose QuietComfort 35 II Wireless Bluetooth Headphones,3,25
+Richard Torres Jr.,Apple iPhone,2,37
+Richard Torres Jr.,Sony WF-1000XM3 True Wireless Earbuds,3,73
+Richard Torres Jr.,Apple MacBook,1,43
+Richard Torres Jr.,Samsung Galaxy Book,2,81
+Toni Kirby,Bose QuietComfort 35 II Wireless Bluetooth Headphones,1,89
+Toni Kirby,Samsung Galaxy Book,3,79
+Toni Kirby,Sony PlayStation 5 Console,0,68
+Toni Kirby,Apple iPad,3,98
+Toni Kirby,Samsung Galaxy Watch,3,43
+Sarah Hamilton,Apple AirPods,3,69
+Sarah Hamilton,Samsung Galaxy S21,3,84
+Sarah Hamilton,Samsung Galaxy Tab,1,81
+Sarah Hamilton,Apple MacBook,0,90
+Sarah Hamilton,Samsung Galaxy Book,3,45
+Robert Hall,Samsung Galaxy Tab,2,78
+Robert Hall,Samsung Galaxy S21,2,40
+Robert Hall,Apple MacBook,0,24
+Robert Hall,Samsung Galaxy Book,1,74
+Robert Hall,Sony X800H 4K Ultra HD Smart LED TV,0,23
+Anthony Rogers,Bose QuietComfort 35 II Wireless Bluetooth Headphones,2,88
+Anthony Rogers,Apple AirPods,3,91
+Anthony Rogers,Samsung Galaxy S21,0,86
+Anthony Rogers,Sony WF-1000XM3 True Wireless Earbuds,2,54
+Anthony Rogers,Apple MacBook,1,50
+Tricia Elliott,Bose QuietComfort 35 II Wireless Bluetooth Headphones,0,76
+Tricia Elliott,Apple iPhone,3,79
+Tricia Elliott,Samsung Galaxy Tab,3,51
+Tricia Elliott,Samsung Galaxy S21,1,66
+Tricia Elliott,Apple AirPods,3,56
+Laura Brooks,Apple iPhone,2,85
+Laura Brooks,Apple AirPods,0,29
+Laura Brooks,Samsung Galaxy Tab,0,50
+Laura Brooks,Apple Watch,3,44
+Laura Brooks,Samsung Galaxy Book,1,46
+Marilyn Salinas,Apple iPhone,3,70
+Marilyn Salinas,Samsung Galaxy Tab,3,80
+Marilyn Salinas,Samsung Galaxy S21,2,36
+Marilyn Salinas,Apple MacBook,3,58
+Marilyn Salinas,Apple Watch,3,61
+Jamie Lewis,Apple iPhone,3,79
+Jamie Lewis,Samsung Galaxy Tab,1,41
+Jamie Lewis,Samsung Galaxy S21,2,28
+Jamie Lewis,Sony WF-1000XM3 True Wireless Earbuds,3,62
+Jamie Lewis,Apple MacBook,1,49
+Chad Marquez,Apple iPhone,3,77
+Chad Marquez,Apple AirPods,3,95
+Chad Marquez,Samsung Galaxy Tab,1,59
+Chad Marquez,Apple MacBook,1,73
+Chad Marquez,Samsung Galaxy Book,0,83
+Paul Bailey,Bose QuietComfort 35 II Wireless Bluetooth Headphones,2,91
+Paul Bailey,Samsung Galaxy Tab,3,56
+Paul Bailey,Samsung Galaxy S21,2,42
+Paul Bailey,Sony WF-1000XM3 True Wireless Earbuds,3,26
+Paul Bailey,Apple MacBook,3,40
+Eduardo Hawkins,Bose QuietComfort 35 II Wireless Bluetooth Headphones,3,54
+Eduardo Hawkins,Apple iPhone,3,50
+Eduardo Hawkins,Samsung Galaxy Tab,3,40
+Eduardo Hawkins,Apple MacBook,1,98
+Eduardo Hawkins,Apple Watch,1,63
+Jodi Pierce,Bose QuietComfort 35 II Wireless Bluetooth Headphones,1,64
+Jodi Pierce,Apple AirPods,1,99
+Jodi Pierce,Samsung Galaxy S21,1,99
+Jodi Pierce,Apple MacBook,1,95
+Jodi Pierce,Apple Watch,0,92
+Cameron Lopez,Apple AirPods,1,30
+Cameron Lopez,Samsung Galaxy S21,2,56
+Cameron Lopez,Sony WF-1000XM3 True Wireless Earbuds,2,62
+Cameron Lopez,Apple Watch,3,22
+Cameron Lopez,Apple MacBook,3,29
+Elizabeth Ferrell,Bose QuietComfort 35 II Wireless Bluetooth Headphones,2,84
+Elizabeth Ferrell,Apple iPhone,2,52
+Elizabeth Ferrell,Apple AirPods,1,60
+Elizabeth Ferrell,Apple Watch,0,75
+Elizabeth Ferrell,Samsung Galaxy Buds,3,78
+Brian Johns,Apple iPhone,0,65
+Brian Johns,Apple AirPods,0,89
+Brian Johns,Samsung Galaxy S21,0,28
+Brian Johns,Sony WF-1000XM3 True Wireless Earbuds,1,74
+Brian Johns,Sony PlayStation 5 Console,2,95
+Matthew Stewart,Bose QuietComfort 35 II Wireless Bluetooth Headphones,1,77
+Matthew Stewart,Apple iPhone,0,86
+Matthew Stewart,Samsung Galaxy S21,0,71
+Matthew Stewart,Samsung Galaxy Book,0,20
+Matthew Stewart,Sony PlayStation 5 Console,2,94
+Richard Moran,Bose QuietComfort 35 II Wireless Bluetooth Headphones,3,47
+Richard Moran,Apple AirPods,2,91
+Richard Moran,Samsung Galaxy Tab,0,66
+Richard Moran,Apple Watch,1,90
+Richard Moran,Apple MacBook,1,81
+Joshua Valentine,Apple AirPods,2,59
+Joshua Valentine,Sony WF-1000XM3 True Wireless Earbuds,2,60
+Joshua Valentine,Apple Watch,0,63
+Joshua Valentine,Sony PlayStation 5 Console,0,42
+Joshua Valentine,Bose SoundLink Revolve Portable Bluetooth Speaker,3,60
+Phyllis Ballard,Apple AirPods,0,37
+Phyllis Ballard,Apple Watch,1,44
+Phyllis Ballard,Apple MacBook,3,75
+Phyllis Ballard,Sony PlayStation 5 Console,1,83
+Phyllis Ballard,Apple iPad,1,69
+Melissa George,Bose QuietComfort 35 II Wireless Bluetooth Headphones,2,81
+Melissa George,Apple iPhone,3,22
+Melissa George,Samsung Galaxy S21,2,93
+Melissa George,Sony WF-1000XM3 True Wireless Earbuds,1,85
+Melissa George,Apple MacBook,3,75
+Catherine Woods,Apple iPhone,2,64
+Catherine Woods,Apple AirPods,0,30
+Catherine Woods,Samsung Galaxy S21,2,33
+Catherine Woods,Apple iPad,3,55
+Catherine Woods,Sony WH-1000XM4 Wireless Noise Cancelling Headphones,1,21
+Daniel David,Apple AirPods,1,41
+Daniel David,Samsung Galaxy Tab,2,76
+Daniel David,Sony WF-1000XM3 True Wireless Earbuds,3,54
+Daniel David,Apple Watch,0,87
+Daniel David,Samsung Galaxy Book,3,82
+Crystal Stuart,Bose QuietComfort 35 II Wireless Bluetooth Headphones,3,29
+Crystal Stuart,Apple iPhone,0,67
+Crystal Stuart,Apple MacBook,2,64
+Crystal Stuart,Apple Watch,0,92
+Crystal Stuart,Samsung Galaxy Book,3,94
