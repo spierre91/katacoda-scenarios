@@ -9,7 +9,7 @@ We can now read in the combined file into a data frame:
 
 `df = pd.read_csv("combined_tesla_files.csv")`{{execute}}
 
-` del df['Unnamed: 0']`{{execute}}
+`del df['Unnamed: 0']`{{execute}}
 and let's print the first five rows:
 
 `print(df.head())`{{execute}}

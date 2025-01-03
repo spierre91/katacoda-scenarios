@@ -15,7 +15,7 @@ Let's print the mean `Weight`:
 We can also look at the standard deviation. The standard deviation measures the amount of dispersion in the values of a numerical column in a data set.  Let's print the standard deviation in `Height`:
 
 
-`print("Standard Deviation Height (kg): ", df['Height'].std())`{{execute}}
+`print("Standard Deviation Height (cm): ", df['Height'].std())`{{execute}}
 
 And `Weight`:
 
@@ -25,10 +25,10 @@ And `Weight`:
 Next, let's print the minimum and maximum values of `Height`:
 
 
-`print("Minimum Height (kg): ", df['Height'].min())`{{execute}}
+`print("Minimum Height (cm): ", df['Height'].min())`{{execute}}
 
 
-`print("Maximum Height (kg): ", df['Height'].max())`{{execute}}
+`print("Maximum Height (cm): ", df['Height'].max())`{{execute}}
 
 
 And `Weight`:

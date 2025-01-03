@@ -18,11 +18,11 @@ Or even the last 20 rows using `tail`:
 
 Another thing we can do is engineer a few features from the `date_of_birth` column. First, let's convert `date_of_birth` into a Pandas datetime object:
 
-`df.loc[:, 'date_of_birth'] = pd.to_datetime(df['date_of_birth'])`{{execute}}
+`df['date_of_birth'] = pd.to_datetime(df['date_of_birth'])`{{execute}}
 
 Let's create a `week` column:
 
-`df.loc[:,'week'] = df['date_of_birth'].dt.week`{{execute}}
+`df['week'] = df['date_of_birth'].dt.isocalendar().week`{{execute}}
 
 Let's print the first five rows to analyze the result:
 
@@ -30,9 +30,9 @@ Let's print the first five rows to analyze the result:
 
 We can also create `month` and `year` columns:
 
-`df.loc[:,'month'] = df['date_of_birth'].dt.month`{{execute}}
+`df['month'] = df['date_of_birth'].dt.month`{{execute}}
 
-`df.loc[:,'year'] = df['date_of_birth'].dt.year`{{execute}}
+`df['year'] = df['date_of_birth'].dt.year`{{execute}}
 
 `print(df.head())`{{execute}}
 

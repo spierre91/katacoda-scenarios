@@ -15,9 +15,9 @@ Let's print the first five rows:
 For a sanity check, let's convert the 'Week' column into a Pandas datetime object, create a year column and print the unique set of years:
 
 
-`combined_df.loc[:, 'datetime'] = pd.to_datetime(combined_df['Week'])`{{execute}}
+`combined_df['datetime'] = pd.to_datetime(combined_df['Week'])`{{execute}}
 
-`combined_df.loc[:, 'year'] = combined_df['datetime'].dt.year`{{execute}}
+`combined_df['year'] = combined_df['datetime'].dt.year`{{execute}}
 
 
 `print(set(combined_df['year'].values))`{{execute}}
